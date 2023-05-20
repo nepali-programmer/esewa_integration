@@ -1,3 +1,4 @@
+import 'package:esewa_integration/function/esewa.dart';
 import 'package:flutter/material.dart';
 
 class EsewaScreen extends StatelessWidget {
@@ -23,7 +24,10 @@ class EsewaScreen extends StatelessWidget {
           ),
           ElevatedButton(
             child: const Text('Pay with E-Sewa'),
-            onPressed: () {},
+            onPressed: () {
+              Esewa esewa = Esewa();
+              esewa.pay();
+            },
           ),
         ],
       ),
